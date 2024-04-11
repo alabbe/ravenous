@@ -1,7 +1,12 @@
 import BusinessList from './components/BusinessList/page'
 import SearchBar from './components/SearchBar/page'
+import { BusinessProps, initMock } from './utils/utils';
+
+
 
 function App() {
+
+  const businessList: BusinessProps[] = initMock();
 
   return (
     <div className="bg-blue-500 w-full">
@@ -10,7 +15,7 @@ function App() {
       </div>
       <div className='mt-24 flex flex-col space-y-4'>
         <SearchBar />
-        <BusinessList />
+        <BusinessList list={businessList} />
       </div>
     </div>
   )

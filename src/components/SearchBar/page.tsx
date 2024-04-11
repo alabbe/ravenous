@@ -11,7 +11,7 @@ const SearchBar = () => {
         <option value="rating">Highest Rated</option>
         <option value="review_count">Most Reviewed</option>
       </select>
-      <button className="rounded w-full h-12 bg-amber-800 text-white">Search</button>
+      <button className="rounded w-full h-12 bg-amber-800 text-white hover:bg-amber-600">Search</button>
       </div>
     </div>
   );
