@@ -2,7 +2,7 @@ import React from "react";
 import Business from "../Business/page";
 import { BusinessProps } from "../../utils/utils";
 
-const BusinessList = ( list: BusinessProps[]) => {
+const BusinessList = ( {list}: {list: BusinessProps[]} ) => {
 
   return (
     <div className="flex flex-col gap-y-8 bg-white  mx-5">

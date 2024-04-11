@@ -1,7 +1,7 @@
 import React from "react";
 import { BusinessProps } from "../../utils/utils";
 
-const Business = ( business: BusinessProps) => {
+const Business = ( { business }: {business: BusinessProps}) => {
   return (
     <div className="flex flex-col bg-slate-100 border-cyan-500 shadow rounded">
       <img src="/pizza-bg-mobile.jpg" className="max-w-full h-auto"></img>
